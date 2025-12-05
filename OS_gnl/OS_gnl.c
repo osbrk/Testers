@@ -6,7 +6,7 @@
 /*   By: osukhore <osukhore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/01 09:46:01 by osukhore          #+#    #+#             */
-/*   Updated: 2025/12/05 14:05:14 by osukhore         ###   ########.fr       */
+/*   Updated: 2025/12/05 14:51:54 by osukhore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,23 +113,28 @@ int	main(int argc, char **argv)
 	close(fd);
 
 	printf("--------------------------------------------\n");
-
-	//// TEST: READ STANDARD INPUT
-	//printf("\n--------------------------------------------\n");
-	//style('T');
-	//printf(" TEST: STANDARD INPUT \n");
-	//style('R');
-	//printf("\n");
-	//i = 0;
-	//while (1)
-	//{
-	//	linetest = get_next_line(0);
-	//	if (!linetest)
-	//		printf("\n");
-	//	printf("%d: %s", (i + 1), linetest);
-	//	free(linetest);
-	//	i++;
-	//}
-
-	return (0);
+		return (0);
 }
+//
+//int	main(void)
+//{
+//	// TEST: READ STANDARD INPUT
+//	style('T');
+//	printf(" TEST: STANDARD INPUT \n");
+//	style('R');
+//	printf("\n");
+//	int	j;
+//	char	*linetest2;
+//	j = 0;
+//	while (1)
+//	{
+//		linetest2 = get_next_line(0);
+//		if (!linetest2)
+//			printf("\n");
+//		printf("%d: %s", (j + 1), linetest2);
+//		free(linetest2);
+//		j++;
+//	}
+//
+//	return (0);
+//}
