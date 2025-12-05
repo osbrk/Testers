@@ -6,7 +6,7 @@
 /*   By: osukhore <osukhore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 13:00:18 by osukhore          #+#    #+#             */
-/*   Updated: 2025/11/24 12:48:30 by osukhore         ###   ########.fr       */
+/*   Updated: 2025/12/05 14:35:31 by osukhore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+
+static int	ft_atoi(const char *nptr)
+{
+	int			i;
+	int			sign;
+	long long	result;
+
+	i = 0;
+	sign = 1;
+	result = 0;
+	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
+		i++;
+	if (nptr[i] == 43 || nptr[i] == 45)
+	{
+		if (nptr[i] == 45)
+			sign = -1;
+		i++;
+	}
+	while (nptr[i] >= 48 && nptr[i] <= 57)
+	{
+		result = result * 10 + (nptr[i] - '0');
+		i++;
+	}
+	return ((int)(result * sign));
+}
 
 static	void style(char style)
 {
